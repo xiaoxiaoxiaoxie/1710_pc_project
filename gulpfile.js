@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 // 启动服务器
 gulp.task("server", function(){
 	connect.server({
-		root : _root,
+		root : "dist",
 		livereload : true
 	});
 });
