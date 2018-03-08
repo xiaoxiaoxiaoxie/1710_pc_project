@@ -4,8 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="/micamika/css/base.css">
+	<script src="lib/requirejs/require.js" data-main="js/index"></script>
 </head>
 <body>
-	
+	<header></header>
+	<div class="main">
+		<h1>商品列表</h1>
+		<div class="list"></div>
+		<script type="text/html" id="list_template">
+			{{each list as prod}}<!--模板引擎-->
+				<div class="prod">
+					<div class="id">{{prod.id}}</div>
+					<div class="title">{{prod.title}}</div>
+					<div class="price">{{prod.price}}</div>
+					<div class="img">{{prod.img}}</div>
+				</div>
+			{{/each}}
+		</script>
+	</div>
 </body>
 </html>

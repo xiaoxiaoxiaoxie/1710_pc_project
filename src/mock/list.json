@@ -1,6 +1,6 @@
 {
-	"res_code":0,
-	"res_error":"",
+	"res_code":0,//code为0时
+	"res_error":"",//error没有错误信息
 	"res_body":{
 		"data":[
 			{"id":1, "title":"商品1", "price": 999, "img":"xxx1.jpg"},
