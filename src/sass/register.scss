@@ -1,0 +1,165 @@
+.login_bt {
+    width: 986px;
+    margin: 10px auto 0;
+    overflow: hidden;
+    height: 30px;
+    background: #ededed;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.zc_jf {
+    width: 906px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 14px;
+    color: #87D0E3;
+    i{
+        width: 23px;
+        height: 16px;
+        vertical-align: middle;
+        background: url('/images/heart.jpg') no-repeat scroll 0% 0% transparent;
+        display: inline-block;
+    }
+}
+.user_zc{
+    width: 996px;
+    margin: 0 auto 20px;
+    padding: 45px 0 55px;
+    overflow: hidden;
+}
+.login_k, .regsetp_btn {
+    width: 310px;
+    margin: 0 auto;
+    background: #ededed;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    dt{
+        float: left;
+        width: 50px;
+        border-right: 5px #FFF solid;
+        text-align: center;
+        padding: 0 5px 0 10px;
+        font-size: 14px;
+    }
+    input{
+        float: left;
+        display: inline-block;
+        background: none;
+        border: none;
+        border: 1px solid red;
+        height: 38px;
+        line-height: 38px;
+        width: 210px;
+        padding-left: 10px;
+        font-size: 14px;
+        border: 1px solid #ededed;
+        color: #626262;
+    }
+    dd{
+        div{
+            display: none;
+            padding-left: 20px;
+            top: 0px;
+            color: #F00;
+            left: 300px;
+            position: absolute;
+            width: 105%;
+            height: 32px;
+            line-height: 32px;
+            &.login_title{
+                padding-left: 40px;
+                color: red;
+                span{
+                    padding: 0 20px 0 40px;
+                    background: url('/images/bj_3.png') no-repeat;
+                    display: inline-block;
+                }
+            }
+        }
+        a{
+            float: left;
+            padding-left: 8px;
+            height: 36px;
+            line-height: 40px;
+            display: inline-block;
+        }
+    }
+}
+.regsetp_k{
+    dt{
+        border-right: 5px solid #fff;
+        height: 40px;
+        width: 70px;
+    }
+    dd{position: relative;}
+    input{width: 208px;
+        &.bg{width: 130px;}    /*带改正140*/
+    }
+}
+.regsetp_title, .regsetp_mm {
+    width: 230px;
+    margin: 0 auto 10px;
+    padding-left: 105px;
+    position: relative;
+
+}
+.regsetp_title{
+  input{
+        vertical-align: middle;
+        margin: -2px 5px 0 0;
+    }
+    div{
+        display: none;
+        padding: 0 20px 0 40px;
+        top: 0px;
+        color: #F00;
+        left: 320px;
+        position: absolute;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        background: url('/images/bj_3.png') no-repeat;
+    }
+}
+.regsetp_mm {
+    display: none;
+    overflow: hidden;
+    dd{float: left;
+        &.qd_box{
+            width: 100px;
+            border: 1px solid #87d0e3;
+            height: 11px;
+            margin: 3px 4px 0;
+            span{
+                float: left;
+                height: 11px;
+                overflow: hidden;
+                background: #87d0e3;
+            }
+        }
+    }
+}
+.login_k, .regsetp_btn {
+    width: 310px;
+    margin: 0 auto;
+    background: #ededed;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.regsetp_btn {
+    margin-bottom: 0;
+    a{
+        display: block;
+        height: 40px;
+        background: #87d0e3;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

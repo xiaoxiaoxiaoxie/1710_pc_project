@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 // 启动服务器
 gulp.task("server", function(){
 	connect.server({
-		root : "dist",
+		root : _root,
 		livereload : true
 	});
 });
@@ -38,6 +38,7 @@ gulp.task("sass", function(){
 	gulp.src("src/sass/**/*.scss")
 		.pipe(sass({outputStyle:"compressed"}))
 		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.dest("src/css"))
 		.pipe(connect.reload());
 });
 

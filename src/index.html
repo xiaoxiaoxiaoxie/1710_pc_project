@@ -3,16 +3,192 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="/micamika/css/base.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/index.css">
 	<script src="lib/requirejs/require.js" data-main="js/index"></script>
 </head>
 <body>
 	<header></header>
-	<div class="main">
+	<div class="banner">
+		<div id="banners" class="main_banner hh">
+			<div class="main_img">
+				<span>
+					<a href="#">
+						<img src="/images/banner1.jpg">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/images/banner2.jpg">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/images/banner3.jpg">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/images/banner4.jpg">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/images/banner5.jpg">
+					</a>
+				</span>
+				<span>
+					<a href="#">
+						<img src="/images/banner6.jpg">
+					</a>
+				</span>
+
+			</div>
+			<a id="btn_prev" href="javascript:;"></a>
+			<a id="btn_next" href="javascript:;"></a>
+			<div class="num">
+				<span class="ad01"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div class="list1">
+		<div class="xilie">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/xilie1.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>经典系列</p>
+					<label>CLASS SERIES</label>
+				</a>
+			</div>
+		</div>
+		<div class="xilie">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/xilie2.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>法式系列</p>
+					<label>FRENCH SERIES</label>
+				</a>
+			</div>
+		</div>
+		<div class="xilie">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/xilie3.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>冰淇淋系列</p>
+					<label>GELATO SERIES</label>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="vedio">
+		<div class="title">
+			<span>
+				<img src="/images/title.jpg" alt="好利来首页视频左侧站位" border="0">
+			</span>
+		</div>
+		<div style="margin: 10px 0 10px 0;">
+			<video id="theVedio" controls="" loop="false" poster="#" style="cursor: pointer;width: 745px;height: 420px">
+				<!-- http://7xpw1x.com1.z0.glb.clouddn.com/shouyeok.jpg -->
+				<source src="http://cloud.video.taobao.com//play/u/2455221099/p/1/e/6/t/1/50071310842.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class="list2">
+		<div class="xilie">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/l2_xilie1.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>配送包</p>
+					<label>DELIVERY PACKAGE</label>
+				</a>
+			</div>
+		</div>
+		<div class="xilie">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/l2_xilie2.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>店面形象</p>
+					<label>STORE IMAGES</label>
+				</a>
+			</div>
+		</div>
+		<div class="xilie ice">
+			<div class="tctu">
+				<a href="#">
+					<img src="/images/l2_xilie3.jpg">
+				</a>
+			</div>
+			<div class="tc">
+				<a href="#">
+					<p>配送服务</p>
+					<label>DELIVERY SERVICE</label>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--尾部-->
+	<footer></footer>
+	<!-- <div>
+		<div style="margin-top: 10px"></div>
+		<div class="footerhelp">
+			<p style="width: 976px">帮助中心<i></i></p>
+		</div>
+		<div class="footer">
+			<span>
+				<p>
+					Copyright2010 ©北京市好利来食品有限公司 版权所有<br>
+					京icp备15012142号<br>
+					好利来官方邮箱：info@holiland.com <br>
+				</p>
+				<p>客服电话：400-700-5999</p>
+				<p>
+					注册地址：北京市朝阳区观音堂文化大道甲6号北201室<br>
+					食品流通许可证号：<br>
+					统一社会信用代码：91110105721420005Y
+				</p>
+			</span>
+			<div class="footerright">
+				<h4>FOLLOW US</h4>
+				<div class="jiathis_style h">
+					<a class="jiathis_button_tsina"><span class="jiathis_txt jtico jtico_tsina"></span></a>新浪微博
+					<a class="h_weixin"></a>微信
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+	<!-- <div class="main">
 		<h1>商品列表</h1>
 		<div class="list"></div>
 		<script type="text/html" id="list_template">
-			{{each list as prod}}<!--模板引擎-->
+			{{each list as prod}}<!--模板引擎
 				<div class="prod">
 					<div class="id">{{prod.id}}</div>
 					<div class="title">{{prod.title}}</div>
@@ -21,6 +197,7 @@
 				</div>
 			{{/each}}
 		</script>
-	</div>
+	</div> --> 
+	<script src="js/loadHeaderFooter.js"></script>
 </body>
 </html>

@@ -1,1 +1,92 @@
 <!-- 注册 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册界面</title>
+	<link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <script src="/lib/requirejs/require.js" data-main="/js/index"></script>
+</head>
+<body>
+	<header></header>
+	<div class="login_bt" style="text-align:center; padding-left:0; width:996px; background:#fff;">
+		<span style="float:left; width:45%; display:inline-block; border-top:1px dashed #d5d5d5; margin-top:14px;"></span>
+		<span style="width:10%; display:inline-block; color:#909090; font-weight:bold;">用户注册</span>
+		<span style="float:right; width:45%; display:inline-block; border-top:1px dashed #d5d5d5; margin-top:14px;"></span>
+	</div>
+	<div class="zc_jf"><i></i>注册赠送积分：100</div>
+	<div class="user_zc">
+		<form name="userRegForm" method="post" action="http://www.holiland.com/misc.php" class="ajaxForm">
+		<input name="act" value="act_register" type="hidden">
+		<input name="back_act" value="" type="hidden">
+		<!-- <dl class="login_k regsetp_k">
+			<dt>邮&nbsp;&nbsp;箱</dt>
+			<dd>
+				<input name="email" onblur="checkEmail(this.value)" autocomplete="off" maxlength="60" type="text">
+				<div class="login_title login_tt"><span id="useridmsg">请填写您的Email地址</span></div>
+			</dd>
+		</dl> -->
+		<dl class="login_k regsetp_k">
+			<dt>手机号</dt>
+			<dd>
+				<input name="mobile" onblur="checkMobile(this.value)" autocomplete="on" maxlength="11" type="text">
+				<div class="login_title login_tt"><span id="useridmsg">请输入注册手机号码</span></div>
+			</dd>
+		</dl>
+				<dl class="login_k regsetp_k">
+			<dt>验&nbsp;证&nbsp;码</dt>
+			<dd>
+				<input name="captcha" maxlength="4" class="bg reg_captcha" autocomplete="off" type="text">
+				<!-- <img src="captcha.php?width=50&amp;height:20&amp;1920841307" id="captcha" alt="captcha" style="vertical-align: middle;cursor: pointer; margin-top:10px; margin-left:13px;" onclick="this.src='captcha.php?width=50&amp;height:20&amp;'+Math.random()"> -->
+				<!--待处理-->
+
+				<div class="login_title"><span id="yzmmsg">请输入验证码</span></div>
+			</dd>
+		</dl>
+				<dl class="login_k regsetp_k">
+			<dt>短信验证码</dt>
+			<dd>
+				<input name="mobilecode" maxlength="6" class="bg" autocomplete="off" style="width:100px;" type="text">
+				<a href="javascript:;" style="background:#87D0E3; padding:0 6px; line-height:30px; height:30px; margin-top:5px;" onclick="getMobileCode($('input[name=mobile]').val(), 1, this, 1);">获取短信验证码</a>
+				<div class="login_title"><span id="codemsg">请输入短信验证码</span></div>
+			</dd>
+		</dl>
+		<dl class="login_k regsetp_k">
+			<dt>密&nbsp;&nbsp;码</dt>
+			<dd>
+				<input class="qiangdu" name="password" maxlength="20" onblur="checkPassword(this.value);" onkeyup="pwStrength(this.value)" onpaste="return false;" type="password">
+				<div class="login_title"><span id="password">密码必须输入6-20位字符</span> </div>
+			</dd>
+		</dl>
+		<dl class="regsetp_mm" style="display: none;">
+			<dd>密码强度：弱</dd>
+			<dd class="qd_box"> <span id="paaswdPR"></span> </dd>
+			<dd>强</dd>
+		</dl>
+		<dl class="login_k regsetp_k">
+			<dt>确认密码</dt>
+			<dd>
+				<input name="repassword" onblur="checkRepwd(this.value)" onpaste="return false;" maxlength="20" type="password">
+				<div id="mima" class="login_title"><span id="repassword1">请再次输入密码</span></div>
+			</dd>
+		</dl>
+		<div class="regsetp_title" style="padding-left:40px;">
+			<input name="agreement" value="1" type="checkbox">
+			<a href="http://www.holiland.com/regprotocol.jsp" target="_blank">我已阅读并接受“服务条款”</a>
+			<div id="disongxw1" style="width:300px;"><span id="yzmmsg">是否同意服务条款</span></div>
+		</div>
+		<div class="regsetp_btn"> <a href="javascript:;" class="submitbtn" datatype="json" callback="userRegister">注册</a> </div>
+		<input name="token" value="615c3f8ca27ce0c97764d730098bc850" type="hidden">
+	</form>
+	</div>
+	<div class="gouwuche">
+		<div class="hll_gwc3" style="padding:100px 0px;text-align:center;">		您还没有选购商品，您可以选择以下推荐商品， 也可以
+			<a href="http://www.holiland.com/" style="color:#000;text-decoration:underline;margin:0px 5px;">返回首页
+			</a>购买。
+		</div>
+	</div>
+	<footer></footer>
+    <script src="/js/loadHeaderFooter.js"></script>
+</body>
+</html>

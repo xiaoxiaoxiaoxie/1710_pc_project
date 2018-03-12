@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/lib/requirejs/require.js" data-main="/js/index"></script>
+</head>
+<body>
+    <header></header>
+    <div class="login_bt" style="text-align:center; padding-left:0; width:996px; background:#fff;">
+        <span style="float:left; width:45%; display:inline-block; border-top:1px dashed #d5d5d5; margin-top:14px;"></span>
+        <span style="width:10%; display:inline-block; color:#909090; font-weight:bold;">用户登录</span>
+        <span style="float:right; width:45%; display:inline-block; border-top:1px dashed #d5d5d5; margin-top:14px;"></span>
+    </div>
+    <div class="login_form">
+        <form name="formLogin" action="http://www.holiland.com/misc.php" method="post" id="my_login" class="ajaxForm">
+            <input name="act" value="act_login" type="hidden">
+            <input name="back_act" value="http://www.holiland.com/" type="hidden">
+            <dl class="login_k">
+                <dt>用户名</dt>
+                <dd>
+                    <input name="username" placeholder="手机|邮箱" type="text">
+                    <br>
+                    <div class="login_title" >
+                        <span id="useridmsg">请您确认填写您的邮箱或手机号</span>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="login_k">
+                <dt>密&nbsp;&nbsp;码</dt>
+                <dd>
+                    <input name="password" class="bg" placeholder="请输入6-20位字符" type="password">
+                    <a href="http://www.holiland.com/misc.php?act=get_password">忘记密码？</a>
+                    <div class="login_title" style="display: none;">
+                        <span id="pwdmsg">密码必须输入6-20位字符</span>
+                    </div>
+                </dd>
+            </dl>
+            <div class="login_btnBox" style="width:310px;">
+                <a href="javascript:;" class="login_btn submitbtn" datatype="json" callback="userLogin" style="width:195px;">登 录</a>
+                <a href="http://www.holiland.com/misc.php?act=register" style="width:105px;">免费注册</a>
+            </div>
+
+            <!-- <div style="width:310px; border-top:1px solid #e5e5e5; margin:10px auto;">
+                <p style="line-height:33px;">使用合作网站账号登录</p>
+                <p>
+                    <span><a href="javascript:;" onclick="loginConnect('alipay');"><img src="statics/images/login/alipay-50.png" width="28" /></a></span>
+                    <span style="margin-left:18px;"><a href="javascript:;" onclick="loginConnect('qq');"><img src="statics/images/login/qq-50.png" width="28" /></a></span>
+                    <span style="margin-left:18px;"><a href="javascript:;" onclick="loginConnect('weixin');"><img src="statics/images/login/weixin-50.png" width="28" /></a></span>
+                    <span style="margin-left:18px;"><a href="javascript:;" onclick="loginConnect('tsina');"><img src="statics/images/login/sina-50.png" width="28" /></a></span>
+                </p>
+            </div> -->
+        </form>
+    </div>
+    <footer></footer>
+    <script src="/js/loadHeaderFooter.js"></script>
+</body>
+</html>
